@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f5f5f5"
+        >
+	
+    <com.font.TextViewWirhComicsFont
+            android:id="@+id/tw_input_first_player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="ENTER YOUR NAMES"
+            android:textSize="@dimen/default_text_size"
+            android:textColor="#1e1e1e"
+            />
+	<LinearLayout
+	    android:layout_below="@id/tw_input_first_player_name" 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:id="@+id/x_id"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginLeft="10dp">
+	    <com.font.TextViewWirhComicsFont
+            android:id="@+id/x_id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="X"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"
+            android:textSize="18dp"
+            android:textColor="#c3001c"
+            />
+    	<com.font.EditTextWithComicsFont
+            android:id="@+id/edt_first_player_name"
+            android:layout_below="@+id/tw_input_first_player_name"
+            android:layout_width="match_parent"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:text="@string/player_1"
+            android:paddingTop="5dp"
+            android:layout_gravity="bottom"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:textSize="@dimen/default_text_size"
+            android:textColor="#c3001c"
+            />
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_below="@id/x_id" 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:id="@+id/o_id"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginLeft="10dp">
+    	
+    <com.font.TextViewWirhComicsFont
+            android:paddingTop="10dp"
+            android:id="@+id/tw_input_second_player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:textColor="#0099cc"
+            />
+
+    <com.font.EditTextWithComicsFont
+            android:paddingTop="5dp"
+            android:id="@+id/edt_second_player_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/player_2"
+            android:layout_margin="5dp"
+            android:layout_gravity="bottom"
+            android:textSize="@dimen/default_text_size"
+            android:textColor="@color/blue"
+            android:layout_centerHorizontal="true"
+            />
+	</LinearLayout>
+    <com.font.ButtonWithComicsFont
+            android:id="@+id/btn_start_offline_game"
+            android:text="START THE GAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_text_size"
+            android:layout_below="@id/o_id"
+            android:textColor="#1e1e1e"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+</RelativeLayout>

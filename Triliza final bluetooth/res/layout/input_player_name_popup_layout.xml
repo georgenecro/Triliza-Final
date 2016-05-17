@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/anonlogin"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#f5f5f5"
+            android:orientation="vertical">
+
+        <com.font.TextViewWirhComicsFont
+                android:id="@+id/textView_anondailog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTER YOUR NICK"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#1e1e1e"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="@dimen/default_text_size"/>
+
+        <com.font.EditTextWithComicsFont
+                android:id="@+id/edt_player_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/blue"
+                android:layout_margin="10dp"
+                android:textColorHint="@color/black"
+                android:textColorLink="@color/red"
+                android:textSize="@dimen/default_text_size"/>
+
+
+        <com.font.ButtonWithComicsFont
+                android:id="@+id/btn_anonymous_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/default_text_size"
+                android:layout_gravity="center"
+                android:text="CONTINUE"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:textColor="#1e1e1e"/>
+
+    </LinearLayout>
+
+</FrameLayout>

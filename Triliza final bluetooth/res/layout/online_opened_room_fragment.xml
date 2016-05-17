@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="@dimen/chat_fragment_layout_padding_top">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/online_opened_room_fragment_general_padding_size"
+            android:paddingRight="@dimen/online_opened_room_fragment_general_padding_size"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <com.font.TextViewWirhComicsFont
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/online_players"
+                    style="@style/list_view_header_item"/>
+
+            <com.font.TextViewWirhComicsFont
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rating"
+                    style="@style/list_view_header_item"/>
+
+            <com.font.TextViewWirhComicsFont
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/invited_to_play"
+                    style="@style/list_view_header_item"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/ll_updating_group"
+                >
+
+            <com.font.TextViewWirhComicsFont
+                    android:id="@+id/tv_scanning_for_devices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/updating_room_list"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/bt_device_list_paired_list_text_size"/>
+
+            <ProgressBar
+                    android:layout_width="@dimen/progress_bar_size"
+                    android:layout_height="@dimen/progress_bar_size"
+                    android:id="@+id/progress_bar_updating_group_list"
+                    android:layout_gravity="right"/>
+        </LinearLayout>
+
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_activity_players"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/list_view_divider_height"
+                android:cacheColorHint="@android:color/transparent"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/online_opened_room_fragment_general_padding_size"
+            android:paddingRight="@dimen/online_opened_room_fragment_general_padding_size"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/wanted_play_player_list_header_background"
+                android:paddingLeft="@dimen/online_opened_room_fragment_wanted_header_padding_left"
+                android:orientation="horizontal">
+
+            <com.font.TextViewWirhComicsFont
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/wants_to_battle_with_you"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/header_list_item_text_size"/>
+
+        </LinearLayout>
+
+
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_player_witch_want_to_play"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/wanted_play_player_list_header_background"
+                android:dividerHeight="@dimen/list_view_divider_height"
+                android:paddingLeft="@dimen/online_opened_room_fragment_wanted_item_padding_left"
+                />
+    </LinearLayout>
+
+
+</LinearLayout>

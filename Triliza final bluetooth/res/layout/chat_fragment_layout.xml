@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/chat_fragment_layout_padding_left"
+              android:paddingRight="@dimen/chat_fragment_layout_padding_right"
+              android:paddingTop="@dimen/chat_fragment_layout_padding_top"
+              android:paddingBottom="@dimen/chat_fragment_layout_padding_bottom"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/chat_fragment_layout_chat_container_padding_left"
+            android:paddingRight="@dimen/chat_fragment_layout_chat_container_padding_right"
+            android:paddingTop="@dimen/chat_fragment_layout_chat_container_padding_top"
+            android:paddingBottom="@dimen/chat_fragment_layout_chat_container_padding_bottom"
+            >
+
+        <ListView
+                android:id="@+id/chat_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:dividerHeight="@dimen/list_view_divider_height"
+                />
+
+    </LinearLayout>
+
+    <com.font.TextViewWirhComicsFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_your_message"
+            android:layout_marginTop="@dimen/chat_fragment_layout_text_view_padding_top"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/red"
+            />
+    <com.font.EditTextWithComicsFont
+            android:id="@+id/chat_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chat_fragment_layout_edit_text_height"
+            />
+
+    <com.font.ButtonWithComicsFont
+            android:id="@+id/btn_chat_sent_message"
+            android:layout_width="@dimen/chat_fragment_layout_sent_button_width"
+            android:layout_height="@dimen/chat_fragment_layout_sent_button_height"
+            android:layout_gravity="right"
+            android:text="@string/send"
+            />
+
+</LinearLayout>

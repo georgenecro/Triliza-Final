@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowNoTitle">true</item>
+
+
+    </style>
+
+    <style name="default_yelow_button">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:background">@drawable/selector_default_yelow_button</item>
+        <item name="android:textSize">@dimen/main_button_text_size</item>
+    </style>
+
+    <style name="text_view_main_activity">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:background">@drawable/selector_for_text_view</item>
+        <item name="android:textSize">@dimen/main_activity_item_default_text_size</item>
+    </style>
+
+    <style name="xo_popup">
+    <item name="android:background">@drawable/dialog_view</item>
+    </style>
+
+
+    <style name="default_padding_for_main">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+
+    </style>
+
+    <style name="list_view_header_item">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/header_list_item_text_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="list_view_item">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/general_list_item_text_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+
+
+
+
+
+</resources>
